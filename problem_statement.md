@@ -2,9 +2,9 @@
 
 Build an AI-powered financial agent that decides whether a user can safely afford a requested expense.
 
-A user may ask: **“Can I afford this laptop?”**
+A user may ask: **"Can I afford this laptop?"**
 
-The agent must consider more than the user’s current balance. It should account for recurring expenses, pending payments, essential spending, confirmed income, payment options, and relevant information found in messages or images.
+The agent must consider more than the user's current balance. It should account for recurring expenses, pending payments, essential spending, confirmed income, payment options, and relevant information found in messages or images.
 
 For every request, the agent must decide whether the user should pay in full, pay partially, use installments, wait, or not proceed.
 
@@ -44,7 +44,7 @@ Use the identifiers available in each file to join the data: `user_id` links use
 
 When a financial event has a blank `amount`, use its `event_id` to find the matching `related_event_id` in `images.csv`, then extract the amount from that image. Do not treat a blank amount as zero.
 
-Balances, requests, payment options, and output amounts use the user’s `home_currency`. The dataset includes INR, ZAR, IDR, USD, and EUR. Required dated conversion rates are provided in `exchange_rates.csv`.
+Balances, requests, payment options, and output amounts use the user's `home_currency`. The dataset includes INR, ZAR, IDR, USD, and EUR. Required dated conversion rates are provided in `exchange_rates.csv`.
 
 All dates use the `YYYY-MM-DD` format. Live exchange rates, market data, and banking access are not required.
 
@@ -61,7 +61,7 @@ Input fields:
 - `requested_amount`: total amount the user wants to commit
 - `desired_completion_date`: date by which the user wants to complete the request
 - `allows_partial_payment`: whether the request permits paying part today and the remaining balance later
-- `request_text`: the user’s question or instruction
+- `request_text`: the user's question or instruction
 
 `request_type` is one of:
 

@@ -1,0 +1,23 @@
+# BUYWISE — HackerRank Orchestrate September 2026
+# Python 3.10+
+
+# Core
+pydantic>=2.7.0
+
+# LangChain / LangGraph
+langchain>=1.4.0
+langchain-core>=1.6.0
+langchain-openai>=1.6.0
+langchain-groq>=1.1.0
+langchain-google-genai>=2.1.0
+langgraph>=1.2.0
+
+# LLM providers
+openai>=3.0.0
+groq>=0.37.0
+
+# Image processing
+Pillow>=10.0.0
+
+# Testing
+pytest>=9.0.0
